@@ -2,7 +2,7 @@
 
 ## Ważne linki
 Informacje organizacyjne:
-[https://www.facebook.com/events/xxx/](https://www.facebook.com/events/xxx/)
+[https://www.facebook.com/events/892638598247276](https://www.facebook.com/events/892638598247276)
 
 Materiały z zajęć:
 [https://github.com/daftcode/daftacademy-python_levelup-spring2021](https://github.com/daftcode/daftacademy-python_levelup-spring2021)
