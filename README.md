@@ -20,20 +20,20 @@ Uruchom pobrany instalator. Zaznacz opcję `Add Python 3.9 to PATH`, a następni
 #### macOS
 Wejdź na stronę [https://www.python.org/downloads/release/python-387/](https://www.python.org/downloads/release/python-387/) i pobierz odpowiedni instalator z sekcji `Files` - `macOS 64-bit Intel installer`. Uruchom pobrany plik i dokończ instalację.
 #### macOS @ Apple Silicone M1 & Big Sur
-Potrzebny będzie nowszy Python 3.9.1. Nie ma to większego wpływu na działanie aplikacji. Wejdź na stronę [https://www.python.org/downloads/release/python-391/](https://www.python.org/downloads/release/python-391/) i pobierz odpowiedni instalator z sekcji `Files` - `macOS 64-bit universal2 installer`. Uruchom pobrany plik i dokończ instalację. Python dla Apple Silicone M1 jest w fazie eksperymentalnej sam python oraz my nie bierzemy za jego stabile działanie odpowiedzialności.
+Potrzebny będzie nowszy Python 3.9.4. Nie ma to większego wpływu na działanie aplikacji. Wejdź na stronę [https://www.python.org/downloads/release/python-394/](https://www.python.org/downloads/release/python-394/) i pobierz odpowiedni instalator z sekcji `Files` - `macOS 64-bit universal2 installer`. Uruchom pobrany plik i dokończ instalację. Python dla Apple Silicone M1 jest w fazie eksperymentalnej sam python oraz my nie bierzemy za jego stabile działanie odpowiedzialności.
 #### Linux
 Istnieje duża szansa, że masz już zainstalowanego pythona na swoim komputerze. W celu sprawdzenia jaka wersja jest zainstalowana, wpisz w terminalu:
-```
+```bash
 python3 --version
 ```
 Jeżeli uzyskasz wynik `Python 3.8.x` - jesteś gotowy na zajęcia. W przypadku, gdy nie zostanie odnaleziona komenda `python3` lub zainstalowana będzie niższa wersja niż `Python 3.8`, należy podążać za kolejnymi krokami, zależnymi od systemu, który posiadasz.
 ##### Debian lub Ubuntu
 Użyj w terminalu następującej komendy:
-```
+```bash
 sudo apt install python3.8
 ```
 Dla wersji Ubuntu starszych niż 16.10 powyższa komenda może nie zadziałać. W takiej sytuacji należy skorzystać z deadsnakes PPA:
-```
+```bash
 sudo apt update
 sudo apt install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
@@ -45,11 +45,13 @@ python3.8 get-pip.py
 ```
 ##### Fedora (29+)
 
+
 ```
 sudo dnf -y install python38 python3-pip python3-virtualenv
 ```
 Dla starszych wersji Fedory powyższa komenda może nie zadziałać. W takiej sytuacji należy wykonać następującej komendy:
-```
+
+```bash
 sudo dnf -y install gcc gcc-c++ zlib zlib-devel libffi-devel openssl-devel openssl-static wget tar make
 cd /tmp/;
 wget https://www.python.org/ftp/python/3.8.7/Python-3.8.7.tgz;
@@ -68,14 +70,18 @@ sudo ln -s /opt/python38/bin/python3.8 /usr/bin/python38;
 sudo ln -s /opt/python38/bin/pip3.8 /opt/python38/bin/pip3;
 sudo ln -s /opt/python38/bin/pip3.8 /opt/python38/bin/pip;
 ```
+
 Dla starszych wersji Fedory możesz dostać błąd mówiący o tym, że komenda `dnf` nie została znaleziona. W takiej sytuacji należy skorzystać z komendy `yum`.
+
+
 ##### openSUSE
+
 Użyj w terminalu następujące komendy:
-```
+```bash
 sudo zypper in python3 python3-pip python3-virtualenv
 ```
 Dla starszych wersji openSUSE powyższa komenda może nie zadziałać. W takiej sytuacji należy wykonać następującej komendy:
-```
+```bash
 sudo zypper in gcc gcc-c++ zlib-devel bzip2 libbz2-devel libffi-devel libopenssl-devel readline-devel sqlite3 sqlite3-devel xz xz-devel wget tar make;
 cd /tmp/;
 sudo wget https://www.python.org/ftp/python/3.8.7/Python-3.8.7.tar.xz;
@@ -96,15 +102,20 @@ sudo ln -s /opt/python38/bin/pip3.8 /opt/python38/bin/pip;
 ```
 ### Sprawdzenie, czy Python 3.8 jest zainstalowany
 Wpisz w terminalu następującą komendę:
-```
+```bash
 python3.8 --version
 ```
 Jeżeli powyższa komenda zwróci wynik `Python 3.8.x` oznacza to, że masz zainstalowaną odpowiednią wersję Pythona.
 
 Na Windowsie powyższa komenda może nie zadziałać. Wtedy należy użyć w `Wierszu polecenia`:
-```
+```bash
 python --version
 ```
 Powinno ono zwrócić wynik `Python 3.8.x`.
 ### Wybór edytora tekstu
 Programowanie w Pythonie nie wymaga żadnych specjalistycznych narzędzi - wystarczy korzystać z edytora tekstu. Na zajęciach możesz korzystać z dowolnego edytora. Jeżeli nie wiesz co wybrać, polecamy Sublime Text [https://www.sublimetext.com/](https://www.sublimetext.com/).
+
+
+### Praca domowa
+Link zapraszający do udziału w pracy domowej został wysłany na email podany w rejestracji na portalu [https://datfacademy.pl]
+Linki różnią się od siebie tak by przydzielić uczestników do Classroomów które mają maksymalną pojemność 50 osób. Bardzo prosimy zapisać się swojego ClassRoom i nie dzielić się linkiem z innymi uczestnikami tak by w procesie rejestracji starczyło miejsc dla wszystkich uczestników.
