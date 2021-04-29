@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Item Details</title>
+    <link rel="stylesheet" type="text/css" href="{{static[0]}}">
+</head>
+
+<body>
+    <div class="container">
+        <p>My string: {{my_string}}</p>
+        <p>Value from the list: {{my_list[3]}}</p>
+        <p>Loop through the list:</p>
+        <ul>
+        {% for n in my_list %}
+            <li>{{n}}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
