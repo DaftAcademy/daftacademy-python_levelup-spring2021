@@ -1,0 +1,6 @@
+fastapi==0.63.0
+uvicorn==0.13.4
+requests==2.25.1
+pytest==6.2.3
+FastAPI-Mako==0.6.2
+Jinja2==2.11.3
