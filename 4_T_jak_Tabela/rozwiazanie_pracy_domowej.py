@@ -142,6 +142,7 @@ async def customers():
 
 @app.get("/employees")
 async def employees(limit: int = None, offset: int = None, order: str = None):
+    # SPRAWDZANIE CZY DOSTALISMY PARAM ORDER I CZY JEST ON W TABLICY DOSTEPNYCH PARAMSOW
     if order and order not in ["last_name", "first_name", "city"]:
         raise HTTPException(status_code=400, detail="Invalid order")
 
