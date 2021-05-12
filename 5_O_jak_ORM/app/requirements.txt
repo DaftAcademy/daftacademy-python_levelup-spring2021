@@ -1,0 +1,12 @@
+click==7.1.2
+fastapi==0.63.0
+greenlet==1.0.0
+h11==0.12.0
+inflect==5.3.0
+psycopg2-binary==2.8.6
+pydantic==1.8.1
+sqlacodegen==2.3.0
+SQLAlchemy==1.4.13
+starlette==0.13.6
+typing-extensions==3.10.0.0
+uvicorn==0.13.4

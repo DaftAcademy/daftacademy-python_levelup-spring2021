@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  postgres:
+    image: postgres:13.0
+    environment:
+      POSTGRES_PASSWORD: DaftAcademy
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      - ./migrations:/docker-entrypoint-initdb.d
+      - ./:/home/app/
+    ports:
+      - "5555:5432"
+volumes:
+  postgres:

@@ -1,0 +1,13 @@
+[tool.black]
+target-version = ['py37']
+exclude = '''
+/(
+    \ build
+  | \ dist
+  | \.cache
+  | \.git
+  | \.benchmarks
+  | \.mypy_cache
+  | \.pytest_cache
+)/
+'''
